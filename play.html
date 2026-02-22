@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- Tells the browser: “This file is HTML5.” Helps the browser render it correctly. -->
+
+<html lang="en">
+<!-- Starts the HTML document.
+     lang="en" tells browsers/screen readers/search engines the page language is English. -->
+
+  <head>
+  <!-- The HEAD is NOT visible on the page.
+       It’s for “settings” and “imports” like title, fonts, CSS, Tailwind, etc. -->
+
+    <meta charset="UTF-8" />
+    <!-- Character set for the page (supports modern characters and symbols).
+         UTF-8 is the standard and almost always what you want. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the layout work correctly on mobile.
+         Without this, phones may zoom out and your responsive Tailwind classes won’t behave right. -->
+
+    <title>MyWebsite</title>
+    <!-- The text you see on the browser tab (and what shows up in bookmarks/search results). -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Loads Tailwind CSS from the internet (CDN).
+         This is what makes classes like "bg-teal-100" actually apply styles. -->
+
+  </head>
+
+  <body class="bg-teal-100">
+    <div class="min-h-screen">
+      <header class="mb-8 flex justify-between bg-teal-500 px-6 py-4 text-teal-100">
+        <h1 class="text-lg font-bold">Only Plummers</h1>
+        <nav class="flex gap-4">
+          <a class="hover:underline" href="#">Home</a>
+          <a class="hover:underline" href="#">Blog</a>
+          <a class="hover:underline" href="#">Contact</a>
+        </nav>
+      </header>
+
+      <main class="space-y-8">
+        <section class="px-6 text-center">
+          <h2 class="mb-4 text-4xl font-semibold sm:text-xl">Welcome</h2>
+          <p>This is the main content area of the website.</p>
+        </section>
+
+        <section>
+          <h2 class="mb-4 text-center text-xl font-semibold">Features</h2>
+          <div class="grid grid-cols-1 gap-6 px-6 sm:grid-cols-2 md:grid-cols-3">
+            <div class="rounded-lg bg-teal-400 p-4">Feature 1</div>
+            <div class="rounded-lg bg-teal-400 p-4">Feature 2</div>
+            <div class="rounded-lg bg-teal-400 p-4">Feature 3</div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
